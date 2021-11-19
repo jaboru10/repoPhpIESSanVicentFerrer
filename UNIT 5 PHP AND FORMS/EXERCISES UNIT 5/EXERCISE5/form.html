@@ -1,0 +1,74 @@
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1>Insercion de vivienda</h1>
+    <h2>Introduzca los datos de la venta</h2>
+
+
+
+
+
+    <form action="follow.php" method="post">
+        Tipo de vivienda : <select name=vivienda value=''>Seleccione tipo</option>
+            <option value='piso'>Piso</option>
+            <option value='adosado'>Adosado</option>
+            <option value='villa'>Villa</option>
+        </select><br>
+
+        Zona : <select name=zona value=''>Seleccione zona</option>
+            <option value='centro'>Centro</option>
+            <option value='afueras'>Afueras</option>
+        </select><br>
+
+        Direccion <input type="text" name="direccion"><br>
+
+        <!--LA ETIQUETA NAME NOS PERMITE QUE SELECCIONESMOS UNO DE ELLOS
+         EN EL PHHP ---- IF($POST['dormitorios']==0) el 0 sera el value-->
+        Numero de dormitorios: 
+        <input type="radio" id="1" name="dormitorios" value="1">
+        <label for="1">1</label>
+        <input type="radio" id="2" name="dormitorios" value="2">
+        <label for="2">2</label>
+        <input type="radio" id="3" name="dormitorios" value="3">
+        <label for="3">3</label><br>
+
+
+        Precio <input type="text" name="precio"><br>
+
+        Tamano <input type="text" name="tamaño"><br>
+
+
+  
+
+
+                
+                    <label>
+                        Piscinaa
+                        <input type="checkbox" name="piscina">
+                    </label>
+                    <label>
+                        Jardin
+                        <input type="checkbox" name="jardin">
+                    </label>
+                    <label>
+                            Garage
+                            <input type="checkbox" name="garage"><br>
+                    </label>
+                    
+                
+
+
+
+        
+
+        <textarea name="textarea" rows="10" cols="50"></textarea><br>
+
+
+        <input type="submit" value="Insertar vivienda">
+    </form>
+
+</body>
+
+</html>
